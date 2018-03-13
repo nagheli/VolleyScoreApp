@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">VolleyScoreApp</string>
+    <string name="points">POINTS</string>
+    <string name="zero">0</string>
+    <string name="home">home</string>
+    <string name="guest">guest</string>
+    <string name="addPoint">+1 Point</string>
+    <string name="set">SET</string>
+    <string name="start">Start</string>
+    <string name="reset">Reset</string>
+
+    <string name="homeWin">HOME WINS!</string>
+    <string name="guestWin">GUEST WINS!</string>
+</resources>
