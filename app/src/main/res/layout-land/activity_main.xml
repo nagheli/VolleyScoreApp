@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.ioana.volleyscoreapp.MainActivity">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
 
     <ImageView
@@ -197,7 +203,7 @@
         android:id="@+id/endGame"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@id/buttonStart"
+        android:layout_below="@id/buttonReset"
         android:text=""
         android:textAllCaps="true"
         android:textColor="@color/endGame"
@@ -214,9 +220,10 @@
         android:id="@+id/buttonStart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/clockTimer"
         android:layout_alignLeft="@+id/buttonReset"
         android:layout_alignStart="@+id/buttonReset"
+        android:layout_below="@+id/points_linear_layout"
+        android:layout_marginTop="@dimen/dim35"
         android:text="@string/start" />
 
 
@@ -224,18 +231,19 @@
         android:id="@+id/buttonReset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:layout_marginBottom="@dimen/dim30"
+        android:layout_below="@+id/points_linear_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dim137"
         android:text="@string/reset" />
 
     <Chronometer
         android:id="@+id/clockTimer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/buttonReset"
+        android:layout_below="@+id/buttonStart"
         android:layout_centerHorizontal="true"
         android:textColor="@color/colorPrimary"
         android:textSize="@dimen/dim32"
         android:textStyle="bold" />
 </RelativeLayout>
+</ScrollView>

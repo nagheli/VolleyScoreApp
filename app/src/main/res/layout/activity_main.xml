@@ -18,6 +18,18 @@
         android:scaleType="centerCrop"
         android:src="@drawable/rsz_volley" />
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
     <LinearLayout
         android:id="@+id/points_linear_layout"
         android:layout_width="match_parent"
@@ -199,7 +211,7 @@
         android:id="@+id/endGame"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@id/buttonStart"
+        android:layout_below="@id/buttonReset"
         android:layout_centerHorizontal="true"
         android:shadowColor="@color/colorPrimary"
         android:shadowDx="6"
@@ -212,32 +224,36 @@
         android:textStyle="bold" />
 
 
-    <Button
-        android:id="@+id/buttonStart"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/clockTimer"
-        android:layout_alignLeft="@+id/buttonReset"
-        android:layout_alignStart="@+id/buttonReset"
-        android:text="@string/start" />
+        <Button
+            android:id="@+id/buttonStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/buttonReset"
+            android:layout_alignStart="@+id/buttonReset"
+            android:layout_below="@+id/points_linear_layout"
+            android:layout_marginTop="18dp"
+            android:text="@string/start" />
 
 
-    <Button
-        android:id="@+id/buttonReset"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:layout_marginBottom="@dimen/dim60"
-        android:text="@string/reset" />
+        <Button
+            android:id="@+id/buttonReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/points_linear_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="106dp"
+            android:text="@string/reset" />
 
-    <Chronometer
-        android:id="@+id/clockTimer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/buttonReset"
-        android:layout_centerHorizontal="true"
-        android:textColor="@color/colorPrimary"
-        android:textSize="@dimen/dim32"
-        android:textStyle="bold" />
+        <Chronometer
+            android:id="@+id/clockTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonStart"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/dim32"
+            android:textStyle="bold" />
+</RelativeLayout>
+
+    </ScrollView>
 </RelativeLayout>

@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
     Button start, reset,plusOnePointHome,plusOnePointGuest;
     MediaPlayer mediaPlayer;
 
+
+
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,6 +52,9 @@ public class MainActivity extends AppCompatActivity {
         mediaPlayer = MediaPlayer.create(MainActivity.this,R.raw.music1);
         mediaPlayer.setLooping(true);
         mediaPlayer.start();
+
+
+
 
         // perform click  event on start button to start a chronometer
 
@@ -266,6 +271,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void displayEndGameHome(String a){
         endGame.setText(a);
+
     }
 
 
@@ -274,6 +280,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void displayEndGameGuest(String b){
         endGame.setText(b);
+
     }
 
 
