@@ -153,14 +153,12 @@ public class MainActivity extends AppCompatActivity {
         outState.putInt(Constants.variableGuestPoints, guest_points);
         outState.putInt(Constants.variableSetHome, setHome);
         outState.putInt(Constants.variableSetGuest, setGuest);
-
         outState.putInt(Constants.variableHomePointsAce, ace_PointsH);
         outState.putInt(Constants.variableGuestPointsAce, ace_PointsG);
         outState.putInt(Constants.variableHomePointsKill, kill_PointsH);
         outState.putInt(Constants.variableGuestPointsKill, kill_PointsG);
         outState.putInt(Constants.variableHomePointsBlock, block_PointsH);
         outState.putInt(Constants.variableGuestPointsBlock, block_PointsG);
-
         outState.putInt(Constants.position, mediaPlayer.getCurrentPosition());
         mediaPlayer.pause();
         outState.putBoolean(Constants.start, startt);
