@@ -8,7 +8,9 @@
     <string name="set">SET</string>
     <string name="start">Start</string>
     <string name="reset">Reset</string>
-
+    <string name="ace">Ace</string>
+    <string name="kill">Kill</string>
+    <string name="block">Block</string>
     <string name="homeWin">HOME WINS!</string>
     <string name="guestWin">GUEST WINS!</string>
 </resources>

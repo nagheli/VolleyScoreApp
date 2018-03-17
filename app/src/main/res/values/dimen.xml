@@ -5,13 +5,17 @@
     <dimen name="dim18">18dp</dimen>
     <dimen name="dim16">16dp</dimen>
     <dimen name="dim30">30dp</dimen>
+    <dimen name="dim50">50dp</dimen>
     <dimen name="dim60">60dp</dimen>
+    <dimen name="dim65">65dp</dimen>
     <dimen name="dim100">100dp</dimen>
     <dimen name="dim125">125dp</dimen>
     <dimen name="dim15">15dp</dimen>
     <dimen name="dim35">35dp</dimen>
     <dimen name="dim137">137dp</dimen>
     <dimen name="dim14">14sp</dimen>
+    <dimen name="dim5">5dp</dimen>
+    <dimen name="dim20dp">20dp</dimen>
     <dimen name="dim20">20sp</dimen>
     <dimen name="dim32">32sp</dimen>
     <dimen name="dim40">40sp</dimen>
