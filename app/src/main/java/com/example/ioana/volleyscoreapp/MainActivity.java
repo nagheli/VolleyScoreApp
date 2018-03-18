@@ -49,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
     Button aceG;
     Button killG;
     Button blockG;
-
     MediaPlayer mediaPlayer;
 
     @Override
@@ -427,7 +426,6 @@ public class MainActivity extends AppCompatActivity {
     //Constants class for the strings.
 
     public class Constants {
-
         public static final String varHome = "myVarEndHomeGame";
         public static final String varGuest = "myVarEndGuestGame";
         public static final String variableHomePoints = "varHomePoints";
