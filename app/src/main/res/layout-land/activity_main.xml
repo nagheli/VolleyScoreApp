@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context="com.example.ioana.volleyscoreapp.MainActivity">
 
-
     <ImageView
         android:id="@+id/volley_background"
         android:layout_width="match_parent"
@@ -21,7 +20,6 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -58,7 +56,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
-
                         android:text="@string/zero"
                         android:textColor="@color/colorPrimary"
                         android:textSize="@dimen/dim72"
@@ -77,14 +74,12 @@
                         android:textSize="@dimen/dim20"
                         android:textStyle="bold" />
 
-
                     <Button
                         android:id="@+id/plusOnePointHome"
                         android:layout_width="@dimen/dim125"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginLeft="@dimen/dim60"
-
                         android:layout_marginRight="@dimen/dim60"
                         android:layout_marginTop="@dimen/dim30"
                         android:onClick="addHomePoints"
@@ -115,7 +110,6 @@
                             android:textColor="@color/colorPrimary"
                             android:textSize="@dimen/dim24"
                             android:textStyle="bold" />
-
                     </LinearLayout>
 
                     <LinearLayout
@@ -132,10 +126,8 @@
                             android:onClick="acePointHome"
                             android:text="@string/ace" />
 
-
                         <TextView
                             android:id="@+id/aceScoreHome"
-
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="@dimen/dim5"
@@ -144,14 +136,12 @@
                             android:textColor="@color/colorPrimary"
                             android:textSize="@dimen/dim24"
                             android:textStyle="bold" />
-
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="left">
-
 
                         <Button
                             android:id="@+id/killH"
@@ -161,7 +151,6 @@
                             android:layout_marginTop="@dimen/dim15"
                             android:onClick="killPointHome"
                             android:text="@string/kill" />
-
 
                         <TextView
                             android:id="@+id/killScoreHome"
@@ -173,14 +162,12 @@
                             android:textColor="@color/colorPrimary"
                             android:textSize="@dimen/dim24"
                             android:textStyle="bold" />
-
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="left">
-
 
                         <Button
                             android:id="@+id/blockH"
@@ -191,10 +178,8 @@
                             android:onClick="blockPointHome"
                             android:text="@string/block" />
 
-
                         <TextView
                             android:id="@+id/blockScoreHome"
-
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="@dimen/dim5"
@@ -203,17 +188,14 @@
                             android:textColor="@color/colorPrimary"
                             android:textSize="@dimen/dim24"
                             android:textStyle="bold" />
-
                     </LinearLayout>
                 </LinearLayout>
-
 
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:orientation="vertical">
-
 
                     <TextView
                         android:id="@+id/pointsG"
@@ -233,7 +215,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
-
                         android:text="@string/zero"
                         android:textColor="@color/colorPrimary"
                         android:textSize="@dimen/dim72"
@@ -259,7 +240,6 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginLeft="@dimen/dim60"
-
                         android:layout_marginRight="@dimen/dim60"
                         android:layout_marginTop="@dimen/dim30"
                         android:onClick="addGuestPoints"
@@ -301,7 +281,6 @@
 
                         <TextView
                             android:id="@+id/aceScoreGuest"
-
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginRight="@dimen/dim5"
@@ -319,8 +298,6 @@
                             android:layout_marginTop="@dimen/dim60"
                             android:onClick="acePointGuest"
                             android:text="@string/ace" />
-
-
                     </LinearLayout>
 
                     <LinearLayout
@@ -328,10 +305,8 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="right">
 
-
                         <TextView
                             android:id="@+id/killScoreGuest"
-
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginRight="@dimen/dim5"
@@ -349,8 +324,6 @@
                             android:layout_marginTop="@dimen/dim15"
                             android:onClick="killPointGuest"
                             android:text="@string/kill" />
-
-
                     </LinearLayout>
 
                     <LinearLayout
@@ -358,10 +331,8 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="right">
 
-
                         <TextView
                             android:id="@+id/blockScoreGuest"
-
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginRight="@dimen/dim5"
@@ -379,14 +350,9 @@
                             android:layout_marginTop="@dimen/dim15"
                             android:onClick="blockPointGuest"
                             android:text="@string/block" />
-
-
                     </LinearLayout>
-
                 </LinearLayout>
-
             </LinearLayout>
-
 
             <TextView
                 android:id="@+id/endGame"
@@ -404,7 +370,6 @@
                 android:textSize="@dimen/dim40"
                 android:textStyle="bold" />
 
-
             <Button
                 android:id="@+id/buttonStart"
                 android:layout_width="wrap_content"
@@ -414,7 +379,6 @@
                 android:layout_below="@+id/points_linear_layout"
                 android:layout_marginTop="@dimen/dim35"
                 android:text="@string/start" />
-
 
             <Button
                 android:id="@+id/buttonReset"
@@ -435,6 +399,5 @@
                 android:textSize="@dimen/dim32"
                 android:textStyle="bold" />
         </RelativeLayout>
-
     </ScrollView>
 </RelativeLayout>

@@ -23,10 +23,33 @@ public class MainActivity extends AppCompatActivity {
     int kill_PointsG;
     int block_PointsG;
     long time;
-    boolean startt, resett, plusOnePointHomeE, plusOnePointGuestT;
-    TextView homeScore, guestScore, setPointsHome, setPointsGuest, endGame, aceScoreHome, aceScoreGuest, killScoreHome, killScoreGuest, blockScoreHome, blockScoreGuest;
+    boolean startt;
+    boolean resett;
+    boolean plusOnePointHomeE;
+    boolean plusOnePointGuestT;
+    TextView homeScore;
+    TextView guestScore;
+    TextView setPointsHome;
+    TextView setPointsGuest;
+    TextView endGame;
+    TextView aceScoreHome;
+    TextView aceScoreGuest;
+    TextView killScoreHome;
+    TextView killScoreGuest;
+    TextView blockScoreHome;
+    TextView blockScoreGuest;
     Chronometer simpleChronometer;
-    Button start, reset, plusOnePointHome, plusOnePointGuest, aceH, killH, blockH, aceG, killG, blockG;
+    Button start;
+    Button reset;
+    Button plusOnePointHome;
+    Button plusOnePointGuest;
+    Button aceH;
+    Button killH;
+    Button blockH;
+    Button aceG;
+    Button killG;
+    Button blockG;
+
     MediaPlayer mediaPlayer;
 
     @Override
@@ -83,7 +106,6 @@ public class MainActivity extends AppCompatActivity {
                 plusOnePointHomeE = true;
                 resett = true;
                 startt = false;
-
             }
         });
 
@@ -126,10 +148,8 @@ public class MainActivity extends AppCompatActivity {
                 plusOnePointHomeE = false;
                 startt = true;
                 resett = true;
-
             }
         });
-
     }
 
 
@@ -209,7 +229,6 @@ public class MainActivity extends AppCompatActivity {
         } else {
             simpleChronometer.start();
         }
-
     }
 
     //This method is called when the +1 Point Home button is clicked.
@@ -268,7 +287,6 @@ public class MainActivity extends AppCompatActivity {
             plusOnePointHomeE = false;
             plusOnePointGuestT = false;
             simpleChronometer.stop();
-
         }
     }
 
@@ -283,7 +301,6 @@ public class MainActivity extends AppCompatActivity {
             plusOnePointHomeE = false;
             plusOnePointGuestT = false;
             simpleChronometer.stop();
-
         }
 
     }
@@ -292,14 +309,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void displayEndGameHome(String a) {
         endGame.setText(a);
-
     }
 
     //Display guest endGame.
 
     public void displayEndGameGuest(String b) {
         endGame.setText(b);
-
     }
     //Add ace point for home;
 
@@ -431,9 +446,5 @@ public class MainActivity extends AppCompatActivity {
         public static final String variableGuestPointsKill = "variableGuestPointsKill";
         public static final String variableHomePointsBlock = "variableHomePointsBlock";
         public static final String variableGuestPointsBlock = "variableGuestPointsBlock";
-
-
     }
-
-
 }
